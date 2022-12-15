@@ -28,7 +28,7 @@ from scipy.spatial.transform import Rotation as R
 
 class PosturePitch:
     
-    def __init__(self, acc_data=None, gyro_data=None, mag_data=None, quaternion = None, freq = 52, lr = 0.6, quat = None):
+    def __init__(self, acc_data=None, gyro_data=None, mag_data=None, freq = 52, lr = 0.6, quat = None):
         """
         This this iniatier requires accelerometer and gyroscope data in a 
         nx3 np array. a baseline is calculated from the first few frames in the
@@ -81,7 +81,36 @@ class PosturePitch:
         
     
     
-    def updateIMU(self, acc, gyro):
-            self.Q.append(self.madgwick.updateIMU(self.Q[self.Q.size],gyr = gyro, acc = acc), axis = 0)
-            return self.getPP()[-1]
+    
+    def update(self, acc, gyro, mag=None):
+        """
+            Update the orientation with new data.
+            Can be called as new IMU-data is sent from a IMU device.
+
+        Parameters
+        ----------
+        acc : TYPE
+        A 1x3 np array containing acceleration data in m/s^2.
+
+        gyro : TYPE
+            A 1x3 np array containing angular velocity data in rad/s.
+        
+        mag : TYPE, optional
+            A 1x3 np array containing magnetometer data in nT.
+            Only to be used if we are using a movesense device with 9DOF and
+            magnetometer data is available.
+
+        Returns
+        -------
+        TYPE
+            The calculated orientation for this frame.
+
+        """
+        if(mag is None):
+            self.Q[self.Q[:,0].size-1] = self.madgwick.updateIMU(self.Q[self.Q[:,0].size-1],gyr = gyro, acc = acc)
+        else:
+            self.Q[self.Q[:,0].size-1] = self.madgwick.updateMARG(self.Q[self.Q[:,0].size-1],gyr = gyro, acc = acc, mag = mag)
+        return self.getPP()[-1]
+    
+        
         
