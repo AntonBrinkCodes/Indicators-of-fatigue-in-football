@@ -3,7 +3,7 @@ Are you tired?
 # Not me
 ## actually maybe a little!
 
-#TODO:
+# TODO
 -Fixa shortpaper
 -Fixa kod som slår ihop Posture Pitch var 10:e minut.
 -fixa en snygg readme
