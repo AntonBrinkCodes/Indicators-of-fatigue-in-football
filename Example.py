@@ -88,6 +88,9 @@ def main ():
     #"To get the Posture Pitch we call getPP()" 
     pitch = posturePitch.getPP()
     plt.plot(np.arange(0,pitch.size), pitch)
+    plt.title("Posture Pitch")
+    plt.xlabel("frames")
+    plt.ylabel("Torso degrees")
     plt.show()
     
    # "To simulate streaming data we loop through the remaining data and append this"
@@ -96,6 +99,9 @@ def main ():
     for i in range(len(acc[52:,0])):
         pitch = np.append(pitch, posturePitch.update(gyro = gyro[i+52,:], acc = acc[i+52,:]))   
     plt.plot(np.arange(0,pitch.size), pitch)
+    plt.title("Posture Pitch")
+    plt.xlabel("frames")
+    plt.ylabel("Torso degrees")
     plt.show()
 
     #The posture pitch can also be initialized from a quaternion. The initial quaternion can be 
@@ -107,6 +113,9 @@ def main ():
     for i in range(len(acc[1:,0])):
         pitchQuat = np.append(pitchQuat, posturePitchQuat.update(gyro = gyro[i,:], acc = acc[i,:]))   
     plt.plot(np.arange(0,pitch.size), pitchQuat)
+    plt.title("Posture Pitch")
+    plt.xlabel("frames")
+    plt.ylabel("Torso degrees")
     plt.show()
      
             
