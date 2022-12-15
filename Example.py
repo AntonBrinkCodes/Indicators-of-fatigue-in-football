@@ -5,9 +5,13 @@ Demonstrates the use of our Madgwick filter implementation to
 find PosturePitch using accelerometer
 and Gyroscope data from a Movesense IMU6 device.
 
-We use for-loop to simulate the streaming of data.
+the json "running_example" is a short recording using the movesense device
+of running -> walkin-> running with increased Posture Pitch.
+The mp4 "Running_example" in the github is a video recording of this.
 
-@author: Anton Brink, Elsa Netz
+For this example. we use for-loop to simulate the streaming of data.
+
+@author: Anton Brink
 """
 import numpy as np
 import matplotlib.pyplot as plt
