@@ -7,7 +7,8 @@
 * Jump Intensity
 * Player Pitch
 
-#
+# Table of Contents
+* [Team Members](https://github.com/AntonBrinkCodes/Indicators-of-fatigue-in-football/edit/main/README.md#team-members)
 # Indicators-of-fatigue-in-football
 
 ![Screenshot 2022-12-16 085553](https://user-images.githubusercontent.com/77839398/208050666-c73aca96-0b99-4d21-a266-d104644e3829.png)
@@ -17,11 +18,12 @@ Are you tired?
 ## actually maybe a little!
 
 # TODO
-[] Fixa shortpaper
-[] Fixa kod som slår ihop Posture Pitch var 10:e minut.
-[] fixa en snygg readme
-[] Fixa övriga exempelfiler
-[x] Drick kaffe
+- [ ] Fixa shortpaper
+- [ ] Lägg upp kod för Jump Intensity
+- [ ] Lägg upp kod som slår ihop Posture Pitch var 10:e minut.
+- [ ] fixa en snygg readme
+- [ ] Fixa övriga exempelfiler
+- [x] Drick kaffe
 
 ## Team Members
 * Anton Brink:  [Email me](antonbri@kth.se) , [My github](https://github.com/AntonBrinkCodes/)
