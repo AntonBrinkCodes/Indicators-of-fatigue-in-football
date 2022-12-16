@@ -8,7 +8,7 @@
 * Player Pitch
 
 # Table of Contents
-* [Team Members](https://github.com/AntonBrinkCodes/Indicators-of-fatigue-in-football/edit/main/README.md#team-members)
+* [Team Members](https://github.com/AntonBrinkCodes/Indicators-of-fatigue-in-football#team-members)
 # Indicators-of-fatigue-in-football
 
 ![Screenshot 2022-12-16 085553](https://user-images.githubusercontent.com/77839398/208050666-c73aca96-0b99-4d21-a266-d104644e3829.png)
