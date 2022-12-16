@@ -1,5 +1,6 @@
 
-![Inticators of player fatigue_shorter](https://user-images.githubusercontent.com/77839398/208063756-d8eed18d-571f-42c0-b407-916d218700a9.png)
+![Inticators of player fatigue_shorty](https://user-images.githubusercontent.com/77839398/208064437-fb14db23-2c33-48ea-af0b-7de1aa426151.png)
+
 
 # Indicators-of-fatigue-in-football
 
