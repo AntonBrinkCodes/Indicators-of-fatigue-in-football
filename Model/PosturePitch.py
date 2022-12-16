@@ -75,7 +75,7 @@ class PosturePitch:
             estimated posture pitch for that frame.
 
         """
-        r = R.from_quat(self.madgwick.Q)
+        r = R.from_quat(self.Q)
         pitch = r.as_euler('xyz', degrees = True)[:,2]
         return pitch
         
@@ -93,6 +93,28 @@ class PosturePitch:
         """
         return self.Q[-1]
     
+    def getMean(self, start = None, end = None):
+        """
+        Get the mean of all Posture Pitches. Optionally specify between which indexes
+        to calculate the mean between. 
+
+        Parameters
+        ----------
+        start : TYPE, optional
+            Start index to calculate mean from.
+        end : TYPE, optional
+            End index to calculate mean to.
+
+        Returns
+        -------
+        TYPE
+            The mean value of all Posture Pitches specified.
+
+        """
+       
+        return self.getPP()[start:end].mean()
+        
+
     
     def update(self, acc, gyro, mag=None):
         """
@@ -118,10 +140,12 @@ class PosturePitch:
             The calculated orientation for this frame.
 
         """
+        
         if(mag is None):
-            self.Q[self.Q[:,0].size-1] = self.madgwick.updateIMU(self.Q[self.Q[:,0].size-1],gyr = gyro, acc = acc)
+            self.Q[-1] = self.madgwick.updateIMU(self.Q[-1],gyr = gyro, acc = acc)
         else:
-            self.Q[self.Q[:,0].size-1] = self.madgwick.updateMARG(self.Q[self.Q[:,0].size-1],gyr = gyro, acc = acc, mag = mag)
+            self.Q[-1] = self.madgwick.updateMARG(self.Q[-1],gyr = gyro, acc = acc, mag = mag)
+
         return self.getPP()[-1]
     
         

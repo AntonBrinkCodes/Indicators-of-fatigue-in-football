@@ -99,7 +99,7 @@ def main ():
     for i in range(len(acc[52:,0])):
         pitch = np.append(pitch, posturePitch.update(gyro = gyro[i+52,:], acc = acc[i+52,:]))   
     plt.plot(np.arange(0,pitch.size), pitch)
-    plt.title("Posture Pitch")
+    plt.title("Posture Pitch using first few frames")
     plt.xlabel("frames")
     plt.ylabel("Torso degrees")
     plt.show()
@@ -108,16 +108,51 @@ def main ():
     #an assumed initial orientation, as shown below, and the filter will quickly correct this.
     posturePitchQuat = PP(gyro_data = gyro[:1], acc_data=acc[:1], quat = [ 0.0, 0.0, 0.7071068, 0.7071068 ])
     
+    
     pitchQuat = posturePitchQuat.getPP()
     
     for i in range(len(acc[1:,0])):
         pitchQuat = np.append(pitchQuat, posturePitchQuat.update(gyro = gyro[i,:], acc = acc[i,:]))   
     plt.plot(np.arange(0,pitch.size), pitchQuat)
-    plt.title("Posture Pitch")
+    plt.title("Posture Pitch from estimated quaternion")
     plt.xlabel("frames")
     plt.ylabel("Torso degrees")
     plt.show()
      
-            
+    # If your application does not require you to save posturePitch values for longer periods of time you can
+    # Create a new PosturePitch instance with the last quaternion using getLastAsQuat():
+    # This can be considered Best practice to do at regular intervals 
+    # to keep computation times and memory usage low. 
+    
+    posturePitchQuat = PP(gyro_data = gyro[:1], acc_data=acc[:1], quat = [ 0.0, 0.0, 0.7071068, 0.7071068 ])
+    pitchQuat = posturePitchQuat.getPP()
+    
+    #Simulate performing this as in the example above, however we initiate a new
+    #Posture Pitch halfway through.
+    
+    halfTime = int(len(acc[:,0])/2)
+    print(halfTime)
+    #First half
+    for i in range(len(acc[1:halfTime,0])):
+        pitchQuat = np.append(pitchQuat, posturePitchQuat.update(gyro = gyro[i,:], acc = acc[i,:]))   
+        
+    # Initiate new PosturePitch
+    posturePitchQuat = PP(gyro_data = gyro[:1], acc_data=acc[:1], quat = posturePitchQuat.getLastAsQuat())
+    pitchQuat2 = posturePitchQuat.getPP()
+    
+    #Show the continued streaming of data:
+    for i in range(len(acc[halfTime:,0])):
+        pitchQuat2 = np.append(pitchQuat2, posturePitchQuat.update(gyro = gyro[i+halfTime-1,:], acc = acc[i+halfTime-1,:]))
+    
+    
+    # To show:
+    pitchQuat = np.append(pitchQuat, pitchQuat2)
+    
+    plt.plot(np.arange(0,pitchQuat.size), pitchQuat)
+    plt.title("Posture Pitch thats been reset")
+    plt.xlabel("frames")
+    plt.ylabel("Torso degrees")
+    plt.show()
+    
              
 main()
