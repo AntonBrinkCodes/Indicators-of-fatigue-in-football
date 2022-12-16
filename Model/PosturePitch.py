@@ -79,7 +79,19 @@ class PosturePitch:
         pitch = r.as_euler('xyz', degrees = True)[:,2]
         return pitch
         
-    
+    def getLastAsQuat(self):
+        """
+        Method to return latest estimated rotations as quaternions.
+        Good to call for clearing data by creating a new instance of this class
+        using this quaternion.
+        Indented usage for keeping memory usage low.
+        Returns
+        -------
+        TYPE
+            Returns latest estimated orientation as a normalized quaternion.
+
+        """
+        return self.Q[-1]
     
     
     def update(self, acc, gyro, mag=None):
