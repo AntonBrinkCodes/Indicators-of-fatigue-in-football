@@ -42,7 +42,7 @@ Posture Pitch is the rotation around the x-axis, estimated using gyro and accele
 * Elsa Netz:  [Email me](@kth.se) , [My github](https://github.com//)
 * Tim Wimmelbacher: [Email me](@kth.se) , [My github](https://github.com//)
 
-[PosturePitch_validationMovie](https://user-images.githubusercontent.com/77839398/207816735-72cb9726-2ea1-4f70-a782-3faa92263c2d.gif)
+![PosturePitch_validationMovie](https://user-images.githubusercontent.com/77839398/207816735-72cb9726-2ea1-4f70-a782-3faa92263c2d.gif)
 
 <!--Referencerna måste ha fyra mellanslag, inte använda tab :) :) :) -->
 
