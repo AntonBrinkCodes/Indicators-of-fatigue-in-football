@@ -15,7 +15,7 @@
 ## Are you tired?
 #### Not me
 ###### actually maybe a little!
-If you were a football player, and you were tired from all those goals and headers. Probably you can't jump as intensly, and your running with an increased tilt in your torso! AJ AJ AJ
+If you were a football player, and you were tired from all those goals and headers. Probably you can't jump as intensly, and you're running with an increased tilt in your torso[^increased_trunk_and_other],[^increased_trunk_effects]! AJ AJ AJ! 
 
 ## Jump Intensity
 Jump Intensity is calculated using a combination of flight time and flight frequency. A jump is identified using a weighted sum of acceleration data. It's fun!
@@ -41,3 +41,15 @@ Posture Pitch is the rotation around the x-axis, estimated using gyro and accele
 * Tim Wimmelbacher: [Email me](@kth.se) , [My github](https://github.com//)
 
 [PosturePitch_validationMovie](https://user-images.githubusercontent.com/77839398/207816735-72cb9726-2ea1-4f70-a782-3faa92263c2d.gif)
+
+<!--Referencerna måste ha fyra mellanslag, inte använda tab :) :) :) -->
+
+
+[^increased_trunk_and_other]:
+    [Winter, S., Gordon, S., & Watt, K. (2017). Effects of fatigue on kinematics and kinetics during overground running: a systematic review. The Journal of sports medicine and physical fitness, 57(6), 887–899.](https://doi.org/10.23736/S0022-4707.16.06339-8)
+  
+
+[^increased_trunk_effects]:
+    [Warrener, A., Tamai, R., & Lieberman, D. E. (2021, August). The effect of trunk flexion angle on lower limb mechanics during running. Human Movement Science, 78,  102817.](https://doi.org/10.1016/j.humov.2021.102817)
+
+
