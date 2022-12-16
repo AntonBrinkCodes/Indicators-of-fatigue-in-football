@@ -1,7 +1,7 @@
 # Indicators of Player Fatigue
 ![indicatorsofplayerfatigueheader](https://user-images.githubusercontent.com/77839398/208069033-e1e0f0f2-be2e-4247-ad3f-7616db6eb188.png)
 > Indicators of Player Fatigue is a project by KTH master students that aims to provide IMU-based alternatives to [PlayerLoad](https://support.catapultsports.com/hc/en-us/articles/360000510795-What-is-Player-Load-).
-> The classes in this project provides ways to do both real-time tracking of parameters via streamed data and analyse a set of data.
+> The classes in this project provides ways to do both real-time tracking of parameters via streamed data and to analyse a set of data.
 > The parameters have been tuned for use with a Suunto Movesense device attached to a players torso, but can be changed to fit your own hardware!
 > The data we can measure is:
 
