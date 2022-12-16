@@ -17,7 +17,7 @@
 ## Are you tired?
 #### Not me
 ###### actually maybe a little!
-If you were a football player, and you were tired from all those goals and headers. Probably you can't jump as intensly, and you're running with an increased tilt in your torso[^increased_trunk_and_other],[^increased_trunk_effects]! AJ AJ AJ! 
+If you were a football player, and you were tired from all those goals and headers. Probably you can't jump as intensly, and you're running with an increased tilt in your torso[^increased_trunk_and_other]<sup>,</sup>[^increased_trunk_effects]! AJ AJ AJ! 
 
 ## Jump Intensity
 Jump Intensity is calculated using a combination of flight time and flight frequency. A jump is identified using a weighted sum of acceleration data. It's fun!
