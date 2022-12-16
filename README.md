@@ -23,6 +23,8 @@ If you were a football player, and you were tired from all those goals and heade
 Jump Intensity is calculated using a combination of flight time and flight frequency. A jump is identified using a weighted sum of acceleration data. It's fun!
 
 ## Posture Pitch
+![PosturePitch_validationMovie](https://user-images.githubusercontent.com/77839398/207816735-72cb9726-2ea1-4f70-a782-3faa92263c2d.gif)
+
 Posture Pitch is the rotation around the x-axis, estimated using gyro and acceleration data. It is calculated using sensor fusion and a Madgwick filter. We've created a class PosturePitch, which heavily uses the python native Madgwick filter created by AHRS. See the Python Script "ExamplePP.py" on how our PosturePitch class can be used to perform real time tracking of Posture Pitch! 
 
 ![Screenshot 2022-12-16 085553](https://user-images.githubusercontent.com/77839398/208050666-c73aca96-0b99-4d21-a266-d104644e3829.png)
@@ -42,7 +44,6 @@ Posture Pitch is the rotation around the x-axis, estimated using gyro and accele
 * Elsa Netz:  [Email me](@kth.se) , [My github](https://github.com//)
 * Tim Wimmelbacher: [Email me](@kth.se) , [My github](https://github.com//)
 
-![PosturePitch_validationMovie](https://user-images.githubusercontent.com/77839398/207816735-72cb9726-2ea1-4f70-a782-3faa92263c2d.gif)
 
 <!--Referencerna måste ha fyra mellanslag, inte använda tab :) :) :) -->
 
