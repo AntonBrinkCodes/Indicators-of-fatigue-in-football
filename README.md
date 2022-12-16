@@ -1,3 +1,4 @@
+# Indicators of Player Fatigue
 ![indicatorsofplayerfatigueheader](https://user-images.githubusercontent.com/77839398/208069033-e1e0f0f2-be2e-4247-ad3f-7616db6eb188.png)
 > Indicators of Player Fatigue is a project by KTH master students that aims to provide IMU-based alternatives to [PlayerLoad](https://support.catapultsports.com/hc/en-us/articles/360000510795-What-is-Player-Load-).
 > The classes in this project provides ways to do both real-time tracking of parameters via streamed data.
@@ -9,7 +10,6 @@
 
 # Table of Contents
 * [Team Members](https://github.com/AntonBrinkCodes/Indicators-of-fatigue-in-football#team-members)
-# Indicators-of-fatigue-in-football
 
 
 ## Are you tired?
@@ -20,7 +20,7 @@
 Jump Intensity is calculated using a combination of flight time and flight frequency. A jump is identified using a weighted sum of acceleration data. It's fun!
 
 ## Posture Pitch
-Posture Pitch is the rotation around the x-axis, estimated using gyro and acceleration data. It is calculated using sensor fusion and a Madgwick filter. We've created a class PosturePitch, which heavily uses the Madgwick filter used by AHRS. See the file "ExamplePP.py" on how this class can be used to perform real time tracking of Posture Pitch!
+Posture Pitch is the rotation around the x-axis, estimated using gyro and acceleration data. It is calculated using sensor fusion and a Madgwick filter. We've created a class PosturePitch, which heavily uses the Madgwick filter used by AHRS. See the file "ExamplePP.py" on how this class can be used to perform real time tracking of Posture Pitch! 
 
 ![Screenshot 2022-12-16 085553](https://user-images.githubusercontent.com/77839398/208050666-c73aca96-0b99-4d21-a266-d104644e3829.png)
 
