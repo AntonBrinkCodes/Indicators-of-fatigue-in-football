@@ -9,6 +9,8 @@
 * Posture Pitch
 
 # Table of Contents
+* [Jump Intensity]
+* [Posture Pitch]
 * [Team Members](https://github.com/AntonBrinkCodes/Indicators-of-fatigue-in-football#team-members)
 
 
