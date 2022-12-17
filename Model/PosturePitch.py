@@ -93,27 +93,24 @@ class PosturePitch:
         """
         return self.Q[-1]
     
-    def getMean(self, start = None, end = None):
+    def getMean(self, start = None, end= None):
         """
-        Get the mean of all Posture Pitches. Optionally specify between which indexes
-        to calculate the mean between. 
-
+        Uses np.mean() to calculate the mean of the pitches.
         Parameters
         ----------
         start : TYPE, optional
-            Start index to calculate mean from.
+            Start index to calculate mean between. The default is None.
         end : TYPE, optional
-            End index to calculate mean to.
+            End index to calculate mean between. The default is None.
 
         Returns
         -------
         TYPE
-            The mean value of all Posture Pitches specified.
+            Mean pitch value between indexes if specified.
 
         """
-       
-        return self.getPP()[start:end].mean()
-        
+        return np.mean(self.getPP()[start:end])
+           
 
     
     def update(self, acc, gyro, mag=None):
@@ -142,9 +139,9 @@ class PosturePitch:
         """
         
         if(mag is None):
-            self.Q[-1] = self.madgwick.updateIMU(self.Q[-1],gyr = gyro, acc = acc)
+            self.Q =np.vstack([self.Q, self.madgwick.updateIMU(self.Q[-1],gyr = gyro, acc = acc)])
         else:
-            self.Q[-1] = self.madgwick.updateMARG(self.Q[-1],gyr = gyro, acc = acc, mag = mag)
+            self.Q = np.vstack([self.Q, self.madgwick.updateMARG(self.Q[-1],gyr = gyro, acc = acc, mag = mag)])
 
         return self.getPP()[-1]
     

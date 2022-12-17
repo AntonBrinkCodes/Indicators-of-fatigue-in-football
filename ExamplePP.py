@@ -121,7 +121,7 @@ def main ():
      
     # If your application does not require you to save posturePitch values for longer periods of time you can
     # Create a new PosturePitch instance with the last quaternion using getLastAsQuat():
-    # This can be considered Best practice to do at regular intervals 
+    # Depending on your hardware this could be good to do at regular intervals 
     # to keep computation times and memory usage low. 
     
     posturePitchQuat = PP(gyro_data = gyro[:1], acc_data=acc[:1], quat = [ 0.0, 0.0, 0.7071068, 0.7071068 ])
@@ -131,7 +131,6 @@ def main ():
     #Posture Pitch halfway through.
     
     halfTime = int(len(acc[:,0])/2)
-    print(halfTime)
     #First half
     for i in range(len(acc[1:halfTime,0])):
         pitchQuat = np.append(pitchQuat, posturePitchQuat.update(gyro = gyro[i,:], acc = acc[i,:]))   
@@ -154,5 +153,26 @@ def main ():
     plt.ylabel("Torso degrees")
     plt.show()
     
-             
+    print(posturePitchQuat.getPP().size)
+    
+    # You can calculate the mean of the pitch between specified indexes by calling
+    # PosturePitch.getMean(). Defaults to whole array if no indexes are
+    # specififed.
+    
+    #Here is an example where we calculate the mean Posture Pitch of every second:
+    meanArray =[posturePitchQuat.getMean(start = 0, end = 52)]
+    x = [0]
+    for i in map(lambda x: x+52 ,range(pitch.size-52)):
+        if(i%52==0):
+            x.append(i+52)
+            meanArray.append(posturePitch.getMean(start = i, end = i+52))
+            print(x)
+    
+    plt.plot(np.arange(0,pitchQuat.size), pitchQuat)
+    plt.scatter(x, meanArray)
+    plt.title("Posture Pitch thats been reset")
+    plt.xlabel("frames")
+    plt.ylabel("Torso degrees")
+    plt.show()
+                  
 main()
