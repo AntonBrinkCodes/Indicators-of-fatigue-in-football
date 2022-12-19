@@ -34,7 +34,7 @@ Posture Pitch is the rotation around the x-axis, estimated using gyro and accele
 
 # TODO
 - [ ] Fixa shortpaper
-- [ ] Lägg upp kod för Jump Intensity
+- [x] Lägg upp kod för Jump Intensity
 - [ ] Lägg upp kod som slår ihop Posture Pitch var 10:e minut.
 - [ ] fixa en snygg readme
 - [ ] Fixa övriga exempelfiler
