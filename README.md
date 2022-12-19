@@ -20,6 +20,7 @@
 If you were a football player, and you were tired from all those goals and headers. Probably you can't jump as intensly, and you're running with an increased tilt in your torso[^increased_trunk_and_other]<sup>,</sup>[^increased_trunk_effects]! AJ AJ AJ! 
 
 ## Jump Intensity
+
 Jump Intensity is calculated using a combination of flight time and flight frequency. A jump is identified using a weighted sum of acceleration data. It's fun!
 
 ## Posture Pitch
@@ -42,7 +43,7 @@ Posture Pitch is the rotation around the x-axis, estimated using gyro and accele
 
 ## Team Members
 * Anton Brink:  [antonbri@kth.se](mailto:antonbri@kth.se) , [My github](https://github.com/AntonBrinkCodes/)
-* Alice Engvall:  [Email me](@kth.se) , [My github](https://github.com//)
+* Alice Engvall:  [elsanetz@kth.se](mailto:elsanetz@kth.se) , [My github](https://github.com//)
 * Elsa Netz:  [Email me](@kth.se) , [My github](https://github.com//)
 * Tim Wimmelbacher: [Email me](@kth.se) , [My github](https://github.com//)
 
