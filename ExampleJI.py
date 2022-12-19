@@ -103,7 +103,7 @@ def main():
   ax.set_xticks([0,1,2,3,4,5,6,7])
   ax.set_xticklabels(['$1$','$2$','$3$','$4$','$5$','$6$','$7$'])
   plt.title("Jump Intensity")
-  plt.xlabel("jumps")
+  plt.xlabel("time [s]")
   plt.ylabel("jump intensity")
   plt.show()
 
