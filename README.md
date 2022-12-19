@@ -21,9 +21,10 @@ If you were a football player, and you were tired from all those goals and heade
 
 ## Jump Intensity
 <p align = "center">
-    <img width="384" alt="Skärmavbild 2022-12-19 kl  14 05 59" src="https://user-images.githubusercontent.com/118887881/208433786-76c86352-e3d2-4fd4-8fbb-a3abe71bea0f.png">
+    <img width="383" alt="Skärmavbild 2022-12-19 kl  14 15 19" src="https://user-images.githubusercontent.com/118887881/208434331-db8be4b4-567f-4aac-a8c6-340edac1717f.png">
 </p>
-Jump Intensity is calculated using a combination of flight time and flight frequency. A jump is identified using a weighted sum of acceleration data. It's fun!
+Jump Intensity is calculated using a combination of flight time and jump frequency. A jump is identified using a weighted sum of acceleration data. 
+Using the Python Script "ExampleJI.py", you can see how our class JumpIntensity is used to search for and identify jumps every second, and sum these over a selected time period (in the image above they are also summed each second, but this can be for any time period of choice). This can be used to track jumping intensity in real time!
 
 ## Posture Pitch
 <p align = "center">
