@@ -21,7 +21,7 @@ If you were a football player, and you were tired from all those goals and heade
 
 ## Jump Intensity
 <p align = "center">
-    <img width="389" alt="Skärmavbild 2022-12-19 kl  10 57 39" src="https://user-images.githubusercontent.com/118887881/208433587-992748cd-1b9c-47c2-b753-79664df73898.png">
+    <img width="384" alt="Skärmavbild 2022-12-19 kl  14 05 59" src="https://user-images.githubusercontent.com/118887881/208433786-76c86352-e3d2-4fd4-8fbb-a3abe71bea0f.png">
 </p>
 Jump Intensity is calculated using a combination of flight time and flight frequency. A jump is identified using a weighted sum of acceleration data. It's fun!
 
