@@ -20,7 +20,9 @@
 If you were a football player, and you were tired from all those goals and headers. Probably you can't jump as intensly, and you're running with an increased tilt in your torso[^increased_trunk_and_other]<sup>,</sup>[^increased_trunk_effects]! AJ AJ AJ! 
 
 ## Jump Intensity
-
+<p align = "center">
+    <img width="389" alt="Skärmavbild 2022-12-19 kl  10 57 39" src="https://user-images.githubusercontent.com/118887881/208433587-992748cd-1b9c-47c2-b753-79664df73898.png">
+</p>
 Jump Intensity is calculated using a combination of flight time and flight frequency. A jump is identified using a weighted sum of acceleration data. It's fun!
 
 ## Posture Pitch
