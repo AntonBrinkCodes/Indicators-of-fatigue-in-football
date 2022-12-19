@@ -43,8 +43,8 @@ Posture Pitch is the rotation around the x-axis, estimated using gyro and accele
 
 ## Team Members
 * Anton Brink:  [antonbri@kth.se](mailto:antonbri@kth.se) , [My github](https://github.com/AntonBrinkCodes/)
-* Alice Engvall:  [elsanetz@kth.se](mailto:elsanetz@kth.se) , [My github](https://github.com//)
-* Elsa Netz:  [Email me](@kth.se) , [My github](https://github.com//)
+* Alice Engvall:  [Email me](@kth.se) , [My github](https://github.com//)
+* Elsa Netz:  [elsanetz@kth.se](mailto:elsanetz@kth.se) , [My github](https://github.com//)
 * Tim Wimmelbacher: [Email me](@kth.se) , [My github](https://github.com//)
 
 
