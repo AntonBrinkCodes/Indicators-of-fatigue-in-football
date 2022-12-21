@@ -35,15 +35,6 @@ Posture Pitch is the rotation around the x-axis, estimated using gyro and accele
   <img src="https://user-images.githubusercontent.com/77839398/208050666-c73aca96-0b99-4d21-a266-d104644e3829.png">
 </p>
 
-
-# TODO
-- [ ] Fixa shortpaper
-- [x] Lägg upp kod för Jump Intensity
-- [ ] Lägg upp kod som slår ihop Posture Pitch var 10:e minut.
-- [ ] fixa en snygg readme
-- [ ] Fixa övriga exempelfiler
-- [x] Drick kaffe
-
 ## Team Members
 * Anton Brink:  [antonbri@kth.se](mailto:antonbri@kth.se) , [My github](https://github.com/AntonBrinkCodes/)
 * Alice Engvall:  [Email me](@kth.se) , [My github](https://github.com//)
